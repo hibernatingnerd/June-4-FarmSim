@@ -18,9 +18,17 @@ class Crop
     end
   end
 
+# calculate crop yield
+  def yield
+    self.size * 50
+  end
+
+# shows all plants you can currently farm, may be
+# expanded by updating @@things_you_can_plant
   def self.show_all_plants
     @@things_you_can_plant.each {|v| puts "#{v}" }
   end
+
 
 end
 
